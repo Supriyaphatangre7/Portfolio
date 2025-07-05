@@ -1,22 +1,22 @@
 import express from "express";
 import dotenv from "dotenv";
 import connectDb from "./utils/db.js";
-import router from "./router/contact-router.js";
+import contactRouter from "./router/contact-router.js";
 import cors from "cors"
 
 
 dotenv.config();
 const app=express();
 const corsOptions = {
-    origin: "http://localhost:5173",
-    methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
-    credentials: true,
-  };
-   app.use(cors(corsOptions))
+  origin: "https://portfolio-frontend-a6ya.onrender.com",
+  methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
+  credentials: true,
+};
+app.use(cors(corsOptions));
 
 const PORT=process.env.PORT || 3000;
 app.use(express.json());
-app.use(router)
+app.use("/api", contactRouter);
 
 
 connectDb().then(()=>{
