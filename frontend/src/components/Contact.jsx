@@ -33,7 +33,7 @@ const Contact = () => {
       toast.success("Email sent successfully!");
 
       // 2. Save to backend/database
-      const response = await fetch("http://localhost:3000/contact", {
+      const response = await fetch("https://personal-portfolio-j46p.onrender.com/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
