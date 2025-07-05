@@ -18,12 +18,12 @@ const Pet = () => {
                 {/* Screenshots Section */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 ">
                     <img
-                        src="/image/b4.png"
+                        src="/image/z1.png"
                         alt="Screenshot 1"
                         className="h-100 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300"
                     />
                     <img
-                        src="/image/b6.png "
+                        src="/image/z2.png "
                         alt="Screenshot 2"
                         className="h-100 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300"
                     />
