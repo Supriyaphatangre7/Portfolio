@@ -8,7 +8,7 @@ import cors from "cors"
 dotenv.config();
 const app=express();
 const corsOptions = {
-  origin: "https://portfolio-frontend-a6ya.onrender.com",
+   origin: "https://portfolio-frontend-a6ya.onrender.com",
   methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
   credentials: true,
 };
